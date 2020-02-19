@@ -1,0 +1,37 @@
+{
+  "name": "rollup-plugin-sizeme",
+  "version": "0.0.0",
+  "description": "display brotli and gzip sizes for rollup assets.",
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "brotli",
+    "gzip"
+  ],
+  "repository": "osdevisnot/rollup-plugin-sizeme",
+  "license": "MIT",
+  "author": "osdevisnot <osdevisnot@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/rollup-plugin-sizeme.cjs.js",
+  "module": "dist/rollup-plugin-sizeme.js",
+  "source": "src/rollup-plugin-sizeme.js",
+  "scripts": {
+    "build": "klap build",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "brotli-size": "4.0.0",
+    "gzip-size": "5.1.1",
+    "kleur": "3.0.3",
+    "pretty-bytes": "5.3.0"
+  },
+  "devDependencies": {
+    "klap": "4.2.1"
+  },
+  "klap": {
+    "sourcemap": false,
+    "minify": false
+  }
+}
