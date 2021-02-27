@@ -3,15 +3,13 @@ import { sync } from 'brotli-size';
 import prettyBytes from 'pretty-bytes';
 import { green, bold } from 'kleur';
 
-export default sizeme = () => {
+export const sizeme = () => {
   const showSize = (bundle) => {
     const { code, fileName } = bundle;
     const gzipSize = prettyBytes(gzip.sync(code));
     const brotliSize = prettyBytes(sync(code));
     console.log();
-    console.log(
-      bold(green(`> Sizes:\t${gzipSize}\t${brotliSize}\t${fileName}`))
-    );
+    console.log(bold(green(`> Sizes:\t${gzipSize}\t${brotliSize}\t${fileName}`)));
     console.log();
   };
 
