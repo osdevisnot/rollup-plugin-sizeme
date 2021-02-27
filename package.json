@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-sizeme",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "display brotli and gzip sizes for rollup assets.",
   "keywords": [
     "rollup",
