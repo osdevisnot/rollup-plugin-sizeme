@@ -1,37 +1,37 @@
 {
-  "name": "rollup-plugin-sizeme",
-  "version": "1.0.0",
-  "description": "display brotli and gzip sizes for rollup assets.",
-  "keywords": [
-    "rollup",
-    "rollup-plugin",
-    "brotli",
-    "gzip"
-  ],
-  "repository": "osdevisnot/rollup-plugin-sizeme",
-  "license": "MIT",
-  "author": "osdevisnot <osdevisnot@gmail.com>",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/rollup-plugin-sizeme.cjs.js",
-  "module": "dist/rollup-plugin-sizeme.js",
-  "source": "src/rollup-plugin-sizeme.js",
-  "scripts": {
-    "build": "klap build",
-    "prepublishOnly": "yarn build"
-  },
-  "dependencies": {
-    "brotli-size": "4.0.0",
-    "gzip-size": "6.0.0",
-    "kleur": "4.1.4",
-    "pretty-bytes": "5.6.0"
-  },
-  "devDependencies": {
-    "klap": "6.0.7"
-  },
-  "klap": {
-    "sourcemap": false,
-    "minify": false
-  }
+	"name": "rollup-plugin-sizeme",
+	"version": "1.0.0",
+	"description": "display brotli and gzip sizes for rollup assets.",
+	"keywords": [
+		"rollup",
+		"rollup-plugin",
+		"brotli",
+		"gzip"
+	],
+	"repository": "osdevisnot/rollup-plugin-sizeme",
+	"license": "MIT",
+	"author": "osdevisnot <osdevisnot@gmail.com>",
+	"main": "dist/rollup-plugin-sizeme.cjs.js",
+	"module": "dist/rollup-plugin-sizeme.js",
+	"source": "src/rollup-plugin-sizeme.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "klap build",
+		"prepublishOnly": "yarn build"
+	},
+	"dependencies": {
+		"brotli-size": "^4.0.0",
+		"gzip-size": "^6.0.0",
+		"kleur": "^4.1.4",
+		"pretty-bytes": "^5.6.0"
+	},
+	"devDependencies": {
+		"klap": "6.0.9"
+	},
+	"klap": {
+		"sourcemap": false,
+		"minify": false
+	}
 }

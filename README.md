@@ -19,23 +19,18 @@ yarn add --dev rollup-plugin-sizeme
 then in `rollup.config.js`
 
 ```js
-import sizeme from 'rollup-plugin-sizeme';
+import { sizeme } from 'rollup-plugin-sizeme'
 
 export default {
-  ...
-  plugins: [
-    ...
-    sizeme(),
-    ...
-  ]
+	plugins: [sizeme()],
 }
 ```
 
 ## Output format:
 
 ```
-> Sizes:   462 B    373 B      unplug.js
-          (gzip)   (brotli)   (filename)
+> Asset Size:   462 B    373 B      unplug.js
+                (gzip)   (brotli)   (filename)
 ```
 
 ## License
